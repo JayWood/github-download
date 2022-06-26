@@ -1,0 +1,39 @@
+{
+    "name": "jjwoo/githubdownloads",
+    "description": "A plugin for WordPress.",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "JayWood",
+            "email": "jjwood2004@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "com\\plugish\\plugins\\githubdownloads\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/phpunit/TestCase.php"
+        ]
+    },
+    "require": {
+        "php": "^7.4",
+        "pimple/pimple": "^3.3",
+        "psr/container": "1.0"
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": "phpcs .",
+        "fix": "phpcbf"
+    },
+    "require-dev": {
+        "brain/monkey": "2.*",
+        "pestphp/pest": "^1.21",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^v0.7"
+    }
+}
